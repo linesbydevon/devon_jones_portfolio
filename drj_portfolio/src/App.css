@@ -56,11 +56,85 @@ header{
   background: var(--wrapperColor);
   width: 100%;
   border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+
+.burgerContainer{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  transition: all .6s ease;
+}
+.burgerContainer nav{
+  padding: 32px;
+  background: var(--backgroundColor);
+  border-radius: 8px;
+  transform:scale(25%);
+  cursor: pointer;
+  transition: all .6s ease;
+}
+
+.burgerContainer ul{
+  list-style: none;
+}
+
+.burgerContainer a{
+  color: rgba(var(--fontColor),0);
+  font-weight: bold;
+  text-decoration: none;
+  pointer-events: none;
+  transition: all .6s ease;
+}
+
+.burgerContainer li:after{
+  content: '';
+  display: block;
+  background: rgba(var(--fontColor),.7);
+  width: 100%;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.burgerContainer[class~="expanded"]{
+  width: 100%;
+  height: 100%;
+  backdrop-filter:blur(16px);
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.burgerContainer[class~="expanded"] nav{
+  transform: scale(100%);
+  cursor: default
+}
+
+.burgerContainer[class~="expanded"] a{
+  color: rgba(var(--fontColor),.7);
+  pointer-events: auto
+}
+
+.burgerContainer[class~="expanded"] a:hover{
+  color: rgba(var(--fontColor),1);
+}
+
+.burgerContainer[class~="expanded"] .active{
+  color: var(--gradientColor2);
+  pointer-events: none
 }
 
 #portrait{
   border-radius: 50%;
-  filter: grayscale(100%);
   width: 175px;
   height: 175px;
   border: 6px solid rgba(var(--fontColor),.7);
@@ -126,10 +200,36 @@ BODY STUFF
 main{
 
 }
-
+.wrapper{
+  backdrop-filter: blur(25px);
+}
 #meat{
   display: flex;
   flex-direction: column;
+}
+
+.downloadResume{
+  padding: 16px 8px;
+  text-align: center;
+  color: var(--backgroundColor);
+  border-top: 64px solid var(--backgroundColor);
+}
+.downloadResume a{
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--backgroundColor);
+  color: var(--gradientColor1);
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: 2px solid var(--backgroundColor);
+  transition: background .6s ease, color .6s ease;
+}
+
+.downloadResume a:hover{
+  background: var(--gradientColor1);
+  color: var(--backgroundColor);
 }
 
 #meat h2{
