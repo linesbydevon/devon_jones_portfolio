@@ -9,13 +9,18 @@ import IconDjango from "./SVG/IconDjango";
 import IconEmail from "./SVG/IconEmail";
 import IconGithub from "./SVG/IconGithub";
 import IconLinkedIn from "./SVG/IconLinkedIn";
+import PFP from "../assets/pfp.jpg"
+import Nav from "./Nav";
 
 export default function Header() {
   return (
     <>
     <header>
+    
+        <Nav/>
+      
       <div className="imgAndLinks">
-        <img alt="" id="portrait" src="img/portrait.jpg" />
+        <img alt="" id="portrait" src={PFP} />
         <div className="socialLinks">
           <a href="https://github.com/linesbydevon" rel="noreferrer" target="_blank">
             <IconGithub />

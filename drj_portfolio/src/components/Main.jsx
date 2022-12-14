@@ -5,9 +5,9 @@ export default function Main(){
   return(
     <main>
       <Routes>
-        <Route path="/" element={<Resume/>}/>
+        <Route path="/"/>
         <Route path="/projects" />
-        <Route path="/resume" />
+        <Route path="/resume" element={<Resume/>} />
       </Routes>
     </main>
   )

@@ -1,9 +1,14 @@
 import Collapsible from "./Resume/Collapsible";
+import Button from "../Button";
 export default function Resume() {
   return (
     <div id="meat">
+      <div className="downloadResume">
+        <h2>Want something<br/>printer-friendly?</h2>
+        <Button>Download Resume PDF</Button>
+      </div>
       <section id="workExp">
-        <h2>Work Experience</h2>
+        <h2>Relevant Experience</h2>
         <Collapsible
           employer="Capital One"
           role="Web Designer"
