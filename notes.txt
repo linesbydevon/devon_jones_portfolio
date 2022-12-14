@@ -1,0 +1,10 @@
+to do:
+
+- add alt/aria roles to all svg components
+- take/upload picture
+- add :after effects to reference pics to represent link to linkedin
+- format blockquote
+- create '/' landing page
+- create '/projects' page
+- move resume to '/resume' page
+- add download resume button to resume page
