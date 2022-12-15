@@ -449,20 +449,50 @@ Projects
 
 .project{
   display: flex;
+  align-items: center;
   background: var(--backgroundColor);
   border-radius: 20px; 
   overflow: hidden;
+  width: 100%;
 }
 
 .projectInfo{
-  width: 443px;
+  width: 62%;
   padding: 16px;
 }
 
+.projectInfo h3, p{
+  margin-bottom: 16px;
+}
+
+.projectInfo .buttons{
+  display: flex;
+  gap: 16px;
+  font-weight: bold;
+  color: rgba(var(--fontColor),1)
+}
+
+.projectInfo .buttons a{
+  color: rgba(var(--fontColor),1);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--gradientColor1);
+  transition: border-color .6s ease;
+}
+
+.projectInfo .buttons a:hover{
+  border-color: var(--gradientColor2);
+}
+
 .thumbnailContainer{
-  aspect-ratio: 1;
-  width: 275px;
+  aspect-ratio: 1/1;
+  width: 38%;
   background: grey;
+  overflow:hidden;
+}
+
+.thumbnailContainer img{
+  width: 100%;
 }
 
 
@@ -542,4 +572,22 @@ figcaption img{
   margin-bottom: 32px;
 }
 
+/* ==========
+Projects
+========== */
+
+.project{
+  flex-direction: column-reverse;
 }
+
+.project .thumbnailContainer{
+  width: 100%;
+}
+
+.project .projectInfo{
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+}
+
