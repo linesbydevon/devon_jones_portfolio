@@ -14,7 +14,9 @@ export default function Project({title, image, alt, children, githubURL, deploye
             </div>
           </div>
           <div className="thumbnailContainer">
+            <a href={deployedURL} target="_blank" rel="noreferrer">
             <img src={image} alt={alt}/>
+            </a>
           </div>
         </div>
       </div>

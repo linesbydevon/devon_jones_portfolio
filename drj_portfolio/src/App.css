@@ -589,5 +589,9 @@ Projects
   padding-bottom: 32px;
 }
 
+.project .buttons{
+  justify-content: center;
+}
+
 }
 
