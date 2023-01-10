@@ -161,7 +161,7 @@ h1{
 }
 
 .info p{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .socialLinks{
@@ -199,9 +199,66 @@ h1{
   fill: var(--wrapperColor)
 }
 
+/*=========
+HOME
+=========== */
+
+.home{
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+}
+
+.home .copy{
+  background: var(--backgroundColor);
+  padding: 32px;
+  
+}
+
+.copy a{
+  color: rgba(var(--fontColor),1);
+  text-decoration: none;
+  padding-bottom: .8px;
+  border-bottom: 1px solid var(--gradientColor1);
+  transition: border-color .6s ease;
+}
+.copy a:hover{
+  border-color: var(--gradientColor2);
+}
+
+.home h2{
+  margin-bottom: 24px;
+}
+
+.home .quoteContainer{
+  padding: 32px;
+}
+
+.home figure{
+  width: 100%;
+  padding: 24px 16px;
+  background: var(--backgroundColor);
+  border-radius: 16px;
+  position: relative;
+}
+
+.home figure blockquote{
+  padding-left: 16px;
+  border-left: 4px solid var(--gradientColor2);
+}
+
+.home figure .captionContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home figure figcaption span{
+  font-weight: bold;
+  color: var(--gradientColor2);
+}
+
 
 /* ==========
-BODY STUFF
+RESUME STUFF
 ========== */
 
 main{
@@ -397,7 +454,7 @@ padding-top: 32px;
   
 }
 
-figcaption{
+/* figcaption{
   text-align: center;
   background: linear-gradient(to top, var(--wrapperColor) 60%, rgba(0,0,0,0) 60%)
 }
@@ -419,18 +476,18 @@ figcaption img:hover, #references img:hover{
 figcaption img {
   width: 150px;
   
-}
+} */
 
 
 
-blockquote{
+/* blockquote{
   background: var(--wrapperColor);
   padding: 32px;
 }
 blockquote p{
   max-width: 450px;
   margin: 0 auto 1em;
-}
+} */
 
 
 /*=====================
@@ -560,7 +617,6 @@ h1{
 }
 
 .info p{
-  font-size: 1.2rem;
 }
 
 /* ==========
