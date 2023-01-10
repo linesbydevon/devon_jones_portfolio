@@ -10,7 +10,8 @@ export default function Project({title, image, alt, children, githubURL, deploye
             </p>
             <div className="buttons">
               <Button url={deployedURL}>Deployed</Button>
-              <Button url={githubURL}>Github</Button>
+              {githubURL && <Button url={githubURL}>Github</Button>}
+              
             </div>
           </div>
           <div className="thumbnailContainer">
