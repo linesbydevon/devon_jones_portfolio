@@ -25,7 +25,7 @@ export default function Header() {
           <a href="https://github.com/linesbydevon" rel="noreferrer" target="_blank">
             <IconGithub />
           </a>
-          <a href="https://www.linkedin.com/in/linesbydevon/" rel="noreferrer" target="_blank">
+          <a href="https://www.linkedin.com/in/devondevs/" rel="noreferrer" target="_blank">
             <IconLinkedIn/>
           </a>
           <a href="mailto:linesbydevon@gmail.com" rel="noreferrer" target="_blank">
