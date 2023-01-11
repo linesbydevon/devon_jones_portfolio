@@ -1,11 +1,12 @@
 import Collapsible from "./Resume/Collapsible";
 import Button from "../Button";
+import DevonJonesResume from "../../assets/DevonJonesResume.pdf";
 export default function Resume() {
   return (
     <div id="meat">
       <div className="downloadResume">
         <h2>Want something<br/>printer-friendly?</h2>
-        <Button>Download Resume PDF</Button>
+        <Button url={DevonJonesResume} download={true}>Download Resume PDF</Button>
       </div>
       <section id="workExp">
         <h2>Relevant Experience</h2>

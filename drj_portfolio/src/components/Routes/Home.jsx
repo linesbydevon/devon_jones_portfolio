@@ -16,7 +16,7 @@ export default function Home() {
         <p>
           Despite finding design and development to be as enjoyable as
           songwriting and performing, I dismissed the possibility that I could
-          pursue design or development as a career. After a five year career in
+          pursue them as a career. After a five year career in
           social services, however, I revisited this interest and taught myself
           HTML, CSS, and JavaScript.
         </p>
